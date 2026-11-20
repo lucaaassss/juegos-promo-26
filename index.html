@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos Promo 26 — Programación</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════
+       FONDO DE PARTÍCULAS
+  ══════════════════════════════════════════ -->
+  <canvas id="particles"></canvas>
+
+  <!-- ══════════════════════════════════════════
+       HEADER PRINCIPAL
+  ══════════════════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="badge">🎮 Promo 26</div>
+      <h1>
+        <span class="title-top">JUEGOS</span>
+        <span class="title-bottom">PROGRAMACIÓN</span>
+      </h1>
+      <p class="subtitle">Los juegos que hicimos este año. Descargalos y jugalos 🕹️ (Solo para computadora)</p>
+      <div class="scanline"></div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       GRID DE JUEGOS
+  ══════════════════════════════════════════ -->
+  <main class="games-section">
+    <div class="section-title">
+      <span class="line"></span>
+      <h2>DESCARGAS</h2>
+      <span class="line"></span>
+    </div>
+
+    <div class="games-grid">
+
+      <!-- ════════════════════════════════════
+           🎮 JUEGO 1 — COMPLETAR DATOS AQUÍ
+           ════════════════════════════════════
+           Instrucciones:
+           - "data-file": ruta o URL del archivo a descargar
+             Ejemplo local: "games/mi_juego.zip"
+             Ejemplo Vercel: "/games/mi_juego.zip"
+           - "data-name": nombre del archivo que se descarga
+           - Cambiá el <img src="..."> por el ícono del juego
+             (podés usar un PNG de 256x256 en la carpeta /icons)
+           - Cambiá el <h3> y <p> con el nombre y descripción
+      ═════════════════════════════════════ -->
+      <div class="game-card" data-file="games/Ascent.rar" data-name="Ascent.rar">
+        <div class="card-glow"></div>
+        <div class="card-icon">
+          <!-- 🔽 REEMPLAZÁ src por el ícono de tu juego (ej: icons/juego1.png) -->
+          <img src="icons/Ascent.png" alt="Juego 1"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="icon-fallback" style="display:none">🎮</div>
+        </div>
+        <div class="card-info">
+          <!-- 🔽 REEMPLAZÁ con el nombre real del juego -->
+          <h3>Ascent</h3>
+          <!-- 🔽 Descripción corta del juego -->
+          <br></br>
+          <div class="card-meta">
+            <span class="tag">RAR</span>
+            <!-- 🔽 Cambiar tamaño si querés -->
+            <span class="size">60 MB</span>
+          </div>
+        </div>
+        <button class="download-btn" onclick="descargar(this)">
+          <span class="btn-icon">↓</span>
+          <span>DESCARGAR</span>
+        </button>
+        <div class="download-bar">
+          <div class="download-progress"></div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════
+           🎮 JUEGO 2 — COMPLETAR DATOS AQUÍ
+      ═════════════════════════════════════ -->
+      <div class="game-card" data-file="games/EscapeTheBackrooms.rar" data-name="EscapeTheBackrooms.rar">
+        <div class="card-glow"></div>
+        <div class="card-icon">
+          <img src="icons/EscapeBackrooms.ico" alt="Juego 2"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="icon-fallback" style="display:none">🕹️</div>
+        </div>
+        <div class="card-info">
+          <h3>Escape The Backrooms</h3>
+          <br></br>
+          <div class="card-meta">
+            <span class="tag">RAR</span>
+            <span class="size">30 MB</span>
+          </div>
+        </div>
+        <button class="download-btn" onclick="descargar(this)">
+          <span class="btn-icon">↓</span>
+          <span>DESCARGAR</span>
+        </button>
+        <div class="download-bar">
+          <div class="download-progress"></div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════
+           🎮 JUEGO 3 — COMPLETAR DATOS AQUÍ
+      ═════════════════════════════════════ -->
+      <div class="game-card" data-file="games/ITLFBALL.rar" data-name="ITLFBALL.rar">
+        <div class="card-glow"></div>
+        <div class="card-icon">
+          <img src="icons/ITLFBALL.png" alt="Juego 3"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="icon-fallback" style="display:none">🏆</div>
+        </div>
+        <div class="card-info">
+          <h3>ITLF-BALL</h3>
+          <br></br>
+          <div class="card-meta">
+            <span class="tag">RAR</span>
+            <span class="size">55 KB</span>
+          </div>
+        </div>
+        <button class="download-btn" onclick="descargar(this)">
+          <span class="btn-icon">↓</span>
+          <span>DESCARGAR</span>
+        </button>
+        <div class="download-bar">
+          <div class="download-progress"></div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════
+           🎮 JUEGO 4 — COMPLETAR DATOS AQUÍ
+      ═════════════════════════════════════ -->
+      <div class="game-card" data-file="games/PicadasArgentinas.rar" data-name="PicadasArgentinas.rar">
+        <div class="card-glow"></div>
+        <div class="card-icon">
+          <img src="icons/PicadasArgentinas.ico" alt="Juego 4"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="icon-fallback" style="display:none">⚡</div>
+        </div>
+        <div class="card-info">
+          <h3>Picadas Argentinas</h3>
+          <br></br>
+          <div class="card-meta">
+            <span class="tag">RAR</span>
+            <span class="size">35 MB</span>
+          </div>
+        </div>
+        <button class="download-btn" onclick="descargar(this)">
+          <span class="btn-icon">↓</span>
+          <span>DESCARGAR</span>
+        </button>
+        <div class="download-bar">
+          <div class="download-progress"></div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════
+           🎮 JUEGO 5 — COMPLETAR DATOS AQUÍ
+      ═════════════════════════════════════ -->
+      <div class="game-card" data-file="games/Duo-Quest.rar" data-name="Duo-Quest.rar">
+        <div class="card-glow"></div>
+        <div class="card-icon">
+          <img src="icons/DuoQuest.ico" alt="Juego 5"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="icon-fallback" style="display:none">🌟</div>
+        </div>
+        <div class="card-info">
+          <h3>Duo-Quest</h3>
+          <br></br>
+          <div class="card-meta">
+            <span class="tag">RAR</span>
+            <span class="size">200 MB</span>
+          </div>
+        </div>
+        <button class="download-btn" onclick="descargar(this)">
+          <span class="btn-icon">↓</span>
+          <span>DESCARGAR</span>
+        </button>
+        <div class="download-bar">
+          <div class="download-progress"></div>
+        </div>
+      </div>
+
+      <!-- ════════════════════════════════════
+           🎮 JUEGO 6 — COMPLETAR DATOS AQUÍ
+      ═════════════════════════════════════ -->
+      <div class="game-card" data-file="games/Cabezones.zip" data-name="Cabezones.zip">
+        <div class="card-glow"></div>
+        <div class="card-icon">
+          <img src="icons/juego6.png" alt="Juego 6"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="icon-fallback" style="display:none">🔥</div>
+        </div>
+        <div class="card-info">
+          <h3>Cabezones</h3>
+          <br></br>
+          <div class="card-meta">
+            <span class="tag">ZIP</span>
+            <span class="size">110 MB</span>
+          </div>
+        </div>
+        <button class="download-btn" onclick="descargar(this)">
+          <span class="btn-icon">↓</span>
+          <span>DESCARGAR</span>
+        </button>
+        <div class="download-bar">
+          <div class="download-progress"></div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer>
+    <p>✦ Promo 26 · Programación ✦</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

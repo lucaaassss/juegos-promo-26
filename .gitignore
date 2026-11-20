@@ -1,0 +1,13 @@
+# Juegos (archivos grandes, se hostean en Google Drive)
+games/
+
+# Ignorar carpeta de Vercel
+.vercel
+
+# Si en el futuro usás node_modules
+node_modules/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
