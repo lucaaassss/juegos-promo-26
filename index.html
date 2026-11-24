@@ -171,7 +171,9 @@
       <!-- ════════════════════════════════════
            🎮 JUEGO 5 — COMPLETAR DATOS AQUÍ
       ═════════════════════════════════════ -->
-      <div class="game-card" data-file="https://drive.usercontent.google.com/download?id=1zVS8gXGGhdoLm6QJ0kJkwn-OPhhQz6Pe&export=download&confirm=t" data-name="Duo-Quest.rar">
+      <div class="game-card"
+        data-file="https://drive.usercontent.google.com/download?id=1zVS8gXGGhdoLm6QJ0kJkwn-OPhhQz6Pe&export=download&confirm=t"
+        data-name="Duo-Quest.rar">
         <div class="card-glow"></div>
         <div class="card-icon">
           <img src="icons/DuoQuest.ico" alt="Juego 5"
@@ -198,10 +200,12 @@
       <!-- ════════════════════════════════════
            🎮 JUEGO 6 — COMPLETAR DATOS AQUÍ
       ═════════════════════════════════════ -->
-      <div class="game-card" data-file="https://drive.usercontent.google.com/download?id=1gvBDIa9-izORpe2p3vJFKZQrug6znfRy&export=download&confirm=t" data-name="Cabezones.zip">
+      <div class="game-card"
+        data-file="https://drive.usercontent.google.com/download?id=1gvBDIa9-izORpe2p3vJFKZQrug6znfRy&export=download&confirm=t"
+        data-name="Cabezones.zip">
         <div class="card-glow"></div>
         <div class="card-icon">
-          <img src="icons/juego6.png" alt="Juego 6"
+          <img src="icons/cabezones.png" alt="Juego 6"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
           <div class="icon-fallback" style="display:none">🔥</div>
         </div>
@@ -246,7 +250,67 @@
         </div>
       </div>
 
+      <!-- ════════════════════════════════════
+           🎮 JUEGO 8 — HOSPITAL SAN GABRIEL
+           ════════════════════════════════════
+           🔽 Reemplazá "PEGA_ACA_EL_ID_DE_DRIVE" por el ID del link de Drive
+              (ej: de https://drive.google.com/file/d/1ABC123.../view el ID es 1ABC123...)
+           🔽 Reemplazá "icons/HospitalSanGabriel.png" por el nombre de tu logo en /icons
+      ═════════════════════════════════════ -->
+      <div class="game-card"
+        data-file="https://drive.usercontent.google.com/download?id=1VPohVAMXRDoQlzw7V1bWRVsFpHECge6u&export=download&confirm=t"
+        data-name="HospitalSanGabriel.rar">
+        <div class="card-glow"></div>
+        <div class="card-icon">
+          <!-- 🔽 REEMPLAZÁ src por el ícono de tu juego -->
+          <img src="icons/HospitalSanGabriel.png" alt="Hospital San Gabriel"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="icon-fallback" style="display:none">🏥</div>
+        </div>
+        <div class="card-info">
+          <h3>Hospital San Gabriel</h3>
+          <br></br>
+          <div class="card-meta">
+            <!-- 🔽 Cambiá RAR/ZIP y el tamaño si hace falta -->
+            <span class="tag">RAR</span>
+            <span class="size">210 MB</span>
+          </div>
+        </div>
+        <button class="download-btn" onclick="descargar(this)">
+          <span class="btn-icon">↓</span>
+          <span>DESCARGAR</span>
+        </button>
+        <div class="download-bar">
+          <div class="download-progress"></div>
+        </div>
+      </div>
 
+      <!-- ════════════════════════════════════
+           🎮 JUEGO 9 — DUAL SHOW
+      ═════════════════════════════════════ -->
+      <div class="game-card" data-file="games/DualShow.zip" data-name="DualShow.zip">
+        <div class="card-glow"></div>
+        <div class="card-icon">
+          <img src="icons/dualshow.png" alt="Dual Show"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="icon-fallback" style="display:none">🎭</div>
+        </div>
+        <div class="card-info">
+          <h3>Dual Show</h3>
+          <br></br>
+          <div class="card-meta">
+            <span class="tag">ZIP</span>
+            <span class="size">42 MB</span>
+          </div>
+        </div>
+        <button class="download-btn" onclick="descargar(this)">
+          <span class="btn-icon">↓</span>
+          <span>DESCARGAR</span>
+        </button>
+        <div class="download-bar">
+          <div class="download-progress"></div>
+        </div>
+      </div>
 
     </div>
   </main>
