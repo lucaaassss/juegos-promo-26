@@ -26,7 +26,12 @@ function descargar(btn) {
   // Dispara la descarga real del navegador
   const link = document.createElement('a');
   link.href = fileUrl;
-  link.download = fileName;
+  if (fileUrl.startsWith('http')) {
+    link.target = '_blank';
+    link.rel = 'noopener';
+  } else {
+    link.download = fileName;
+  }
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
