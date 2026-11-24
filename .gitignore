@@ -1,5 +1,6 @@
-# Juegos (archivos grandes, se hostean en Google Drive)
-games/
+# Juegos que superan 100MB (se hostean en Google Drive)
+games/Cabezones.zip
+games/Duo-Quest.rar
 
 # Ignorar carpeta de Vercel
 .vercel
