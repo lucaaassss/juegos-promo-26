@@ -1,7 +1,8 @@
-# Juegos que superan 100MB (se hostean en Google Drive)
+# Juegos que superan 100MB o se hostean en Google Drive
 games/Cabezones.zip
 games/Duo-Quest.rar
 games/HospitalSanGabriel.rar
+games/ElViajeDeAnika.rar
 
 # Ignorar carpeta de Vercel
 .vercel
